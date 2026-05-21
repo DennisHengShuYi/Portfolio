@@ -46,7 +46,7 @@ export default function Projects() {
       ],
       techStack: ['React', 'NodeJS', 'Gemini API', 'OpenAI API', 'Groq', 'TypeScript'],
       featured: true,
-      github: 'https://github.com'
+      github: 'https://github.com/DennisHengShuYi/CareFlow-AI-Powered-Patient-Flow-Optimizer'
     },
     {
       id: 'enviropulse',
@@ -60,7 +60,7 @@ export default function Projects() {
       ],
       techStack: ['React', 'Vite', 'Express', 'Upstash Redis', 'Vercel', 'Railway', 'NodeJS'],
       featured: true,
-      github: 'https://github.com',
+      github: 'https://github.com/DennisHengShuYi/EnviroPulse',
       live: 'https://enviro-pulse.vercel.app'
     },
     {
@@ -75,7 +75,7 @@ export default function Projects() {
       ],
       techStack: ['Python', 'Gemini API', 'Vector DB', 'RAG', 'JSON Schema'],
       featured: true,
-      github: 'https://github.com'
+      github: 'https://github.com/DennisHengShuYi/CtrlZ-FinanceFlow'
     },
     {
       id: 'memecoin',
@@ -89,7 +89,7 @@ export default function Projects() {
       ],
       techStack: ['Python', 'Pandas', 'Scikit-Learn', 'React', 'D3.js', 'Flask'],
       featured: false,
-      github: 'https://github.com'
+      github: 'https://github.com/DennisHengShuYi/Python_Assignment'
     },
     {
       id: 'hackingfuture',
@@ -103,7 +103,7 @@ export default function Projects() {
       ],
       techStack: ['Java', 'JavaFX', 'SQLite', 'Algorithms', 'Physics Engines'],
       featured: false,
-      github: 'https://github.com'
+      github: 'https://github.com/Eterran/lantern'
     },
     {
       id: 'gogreen',
@@ -117,7 +117,7 @@ export default function Projects() {
       ],
       techStack: ['Kotlin', 'Android SDK', 'Fragments', 'SQLite', 'Git'],
       featured: false,
-      github: 'https://github.com'
+      github: 'https://github.com/ngyuheng2003/MAD-Assignment'
     },
     {
       id: 'rescueswarm',
@@ -131,7 +131,7 @@ export default function Projects() {
       ],
       techStack: ['Python', 'MCP', 'Decentralized AI', 'Simulation', 'LLM Agents'],
       featured: false,
-      github: 'https://github.com'
+      github: 'https://github.com/DennisHengShuYi/RescueSwarm'
     }
   ];
 
@@ -143,14 +143,14 @@ export default function Projects() {
     { id: 'mobile', label: 'Mobile SDK', icon: <Smartphone size={14} /> }
   ] as const;
 
-  const filteredProjects = filter === 'all' 
-    ? projectsData 
+  const filteredProjects = filter === 'all'
+    ? projectsData
     : projectsData.filter(p => p.category === filter);
 
   return (
     <section id="projects" className="projects-section">
       <h2 className="section-title">Projects</h2>
-      
+
       {/* Category Tabs */}
       <div className="filter-tabs">
         {categories.map((cat) => (
@@ -168,8 +168,8 @@ export default function Projects() {
       {/* Grid */}
       <div className="projects-grid">
         {filteredProjects.map((project) => (
-          <div 
-            key={project.id} 
+          <div
+            key={project.id}
             className={`project-card glass-panel ${project.featured ? 'featured' : ''}`}
             onClick={() => setSelectedProject(project)}
           >
@@ -179,10 +179,10 @@ export default function Projects() {
               </span>
               {project.featured && <span className="featured-tag">FEATURED</span>}
             </div>
-            
+
             <h3 className="project-title">{project.title}</h3>
             <p className="project-desc">{project.shortDesc}</p>
-            
+
             <div className="project-tech-list">
               {project.techStack.slice(0, 4).map((tech, idx) => (
                 <span key={idx} className="badge badge-tech">{tech}</span>
@@ -221,9 +221,9 @@ export default function Projects() {
               </span>
               <button className="close-modal-btn" onClick={() => setSelectedProject(null)}>&times;</button>
             </div>
-            
+
             <h3 className="modal-project-title">{selectedProject.title}</h3>
-            
+
             <div className="modal-body-content">
               <h4>Key Architecture & Contributions:</h4>
               <ul className="modal-bullets">
@@ -231,7 +231,7 @@ export default function Projects() {
                   <li key={idx}>{bullet}</li>
                 ))}
               </ul>
-              
+
               <h4>Tech Stack Details:</h4>
               <div className="modal-tech-list">
                 {selectedProject.techStack.map((tech, idx) => (

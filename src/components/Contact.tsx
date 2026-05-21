@@ -115,7 +115,7 @@ export default function Contact() {
           </div>
 
           <div className="social-links-footer">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="footer-social-icon" aria-label="GitHub">
+            <a href="https://github.com/DennisHengShuYi" target="_blank" rel="noopener noreferrer" className="footer-social-icon" aria-label="GitHub">
               <GithubIcon />
             </a>
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="footer-social-icon" aria-label="LinkedIn">

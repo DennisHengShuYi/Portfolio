@@ -11,6 +11,15 @@ export default function App() {
   const [activeSection, setActiveSection] = useState('about');
 
   useEffect(() => {
+    // Prevent browser scroll position restoration on refresh
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+    // Force scroll to absolute top of the page
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     const sections = ['about', 'projects', 'experience', 'skills', 'terminal', 'contact'];
     
     const handleScroll = () => {

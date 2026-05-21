@@ -69,7 +69,7 @@ export default function Hero({ onExploreProjects, onOpenTerminal }: HeroProps) {
         </div>
 
         <div className="hero-socials">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="GitHub Profile">
+          <a href="https://github.com/DennisHengShuYi" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="GitHub Profile">
             <GithubIcon size={20} />
           </a>
           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="LinkedIn Profile">

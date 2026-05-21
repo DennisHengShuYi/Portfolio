@@ -25,21 +25,23 @@ export default function Terminal() {
   const terminalEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
+  const isFirstMount = useRef(true);
+
   const scrollToBottom = () => {
     terminalEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
   useEffect(() => {
+    if (isFirstMount.current) {
+      isFirstMount.current = false;
+      return;
+    }
     scrollToBottom();
   }, [history]);
 
   const focusInput = () => {
     inputRef.current?.focus();
   };
-
-  useEffect(() => {
-    focusInput();
-  }, []);
 
   const handleCommand = (cmdText: string) => {
     const trimmed = cmdText.trim().toLowerCase();
