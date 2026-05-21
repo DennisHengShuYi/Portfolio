@@ -40,9 +40,8 @@ export default function Projects() {
       category: 'ai',
       shortDesc: 'Multi-Agent clinical triage pipeline validating urgency and specialist routing with high precision.',
       bullets: [
-        'Architected a Multi-Agent Clinical Triage Pipeline using a Sparse Context Pattern to orchestrate parallel LLM tasks (Gemini, Groq, OpenAI).',
-        'Implemented an Adversarial Consensus Debate (Strategist vs. Critic) to validate clinical urgency and specialist routing.',
-        'Developed a High-Performance Appointment Discovery Engine featuring queue-based slot generation, Specialty Aliasing, and Fallback Discovery Mode.'
+        'Architected a Multi-Agent Clinical Triage Pipeline using a Sparse Context Pattern to orchestrate parallel LLM tasks (Gemini, Groq, OpenAI); implemented an Adversarial Consensus Debate (Strategist vs. Critic) to validate clinical urgency and specialist routing with high precision.',
+        'Developed a High-Performance Appointment Discovery Engine featuring queue-based slot generation, Specialty Aliasing for regional normalization, and Fallback Discovery Mode to maintain hospital discoverability even during doctor unstaffing.'
       ],
       techStack: ['React', 'NodeJS', 'Gemini API', 'OpenAI API', 'Groq', 'TypeScript'],
       featured: true,
@@ -54,9 +53,8 @@ export default function Projects() {
       category: 'web',
       shortDesc: 'Simulation IoT telemetry backend using IDW interpolation across multi-station sensor grids.',
       bullets: [
-        'Engineered an IoT telemetry simulation backend using IDW (Inverse Distance Weighting) interpolation and the Rothfusz Heat Index equation for industrial heat stress.',
-        'Integrated Upstash Redis for distributed state caching with automatic in-memory fallback for zero-downtime resilience.',
-        'Deployed React/Vite on Vercel and Express backend on Railway with dev proxy to mirror production API routing.'
+        'Engineered a simulation IoT telemetry backend using IDW (Inverse Distance Weighting) interpolation across multi-station sensor grids and the Rothfusz Heat Index equation for industrial heat stress computation; integrated Upstash Redis for distributed state caching with automatic in-memory fallback to ensure zero-downtime resilience.',
+        'Deployed a split-environment production system with the React/Vite frontend on Vercel and the Express backend on Railway, managed cross-origin communication via a centralized environment variable and a Vite dev proxy to mirror production API routing locally.'
       ],
       techStack: ['React', 'Vite', 'Express', 'Upstash Redis', 'Vercel', 'Railway', 'NodeJS'],
       featured: true,
@@ -67,15 +65,39 @@ export default function Projects() {
       id: 'financeflow',
       title: 'Finance Flow: Intelligent Data Extraction & RAG Pipeline',
       category: 'ai',
-      shortDesc: 'Robust LLM orchestration layer automating the extraction of structured data from unstructured chats/social media.',
+      shortDesc: 'Robust LLM orchestration layer automating structured extraction and document retrieval.',
       bullets: [
-        'Developed an orchestration layer using LLMs (Google Gemini/OpenAI) to extract structured financial metrics from messy inputs.',
-        'Implemented Retrieval-Augmented Generation (RAG) and Vector Databases to solve complex information retrieval challenges.',
-        'Created high-accuracy classification pipelines for transaction categorizations.'
+        'Developed a robust orchestration layer using LLMs (Google Gemini/OpenAI) to automate the extraction of structured data from unstructured inputs (chat/social media), optimizing data processing workflows.',
+        'Gained experience in implementing Retrieval-Augmented Generation (RAG) and Vector Databases to solve complex information retrieval and high-accuracy classification challenges.'
       ],
       techStack: ['Python', 'Gemini API', 'Vector DB', 'RAG', 'JSON Schema'],
       featured: true,
       github: 'https://github.com/DennisHengShuYi/CtrlZ-FinanceFlow'
+    },
+    {
+      id: 'codethenature',
+      title: 'Code the Nature: Interactive Development Game',
+      category: 'systems',
+      shortDesc: 'Interactive desktop application implementing secure authentication and dynamic state management.',
+      bullets: [
+        'Developed an interactive desktop application using Object-Oriented Java and Swing, implementing user authentication, dynamic data presentation, and state management across multiple UI components.',
+        'Engineered a robust backend integration utilizing JDBC and MySQL to manage relational databases, enabling real-time progress tracking, secure data persistence, and efficient asynchronous updates.'
+      ],
+      techStack: ['Java', 'Swing', 'JDBC', 'MySQL', 'OOP'],
+      featured: true,
+      github: 'https://github.com/MinHan520/WIX-1002-Assignment'
+    },
+    {
+      id: 'handsignrecognition',
+      title: 'Hand Sign Language Recognition',
+      category: 'ai',
+      shortDesc: 'Real-time hand detection and classification system utilizing computer vision frameworks.',
+      bullets: [
+        'Built a real-time hand detection and classification system using OpenCV and MediaPipe.'
+      ],
+      techStack: ['Python', 'OpenCV', 'MediaPipe', 'Machine Learning'],
+      featured: true,
+      github: 'https://github.com/DennisHengShuYi'
     },
     {
       id: 'memecoin',
@@ -83,9 +105,8 @@ export default function Projects() {
       category: 'ai',
       shortDesc: 'End-to-end data pipeline aggregating, cleaning, and processing social metrics to predict trends.',
       bullets: [
-        'Engineered an end-to-end data pipeline to aggregate, clean, and process unstructured social media data and market metrics.',
-        'Applied machine learning models to forecast sentiment-driven market trends.',
-        'Developed an interactive web dashboard to visualize complex datasets, predictive models, and temporal trends.'
+        'Engineered an end-to-end data pipeline to aggregate, clean, and process unstructured social media data and market metrics, applying machine learning models to forecast sentiment-driven market trends.',
+        'Developed an interactive web dashboard to visualize complex datasets, predictive model evaluations, and temporal trends, translating technical data insights into an accessible, user-friendly interface.'
       ],
       techStack: ['Python', 'Pandas', 'Scikit-Learn', 'React', 'D3.js', 'Flask'],
       featured: false,
@@ -97,9 +118,8 @@ export default function Projects() {
       category: 'systems',
       shortDesc: 'Full-stack educational platform featuring global leaderboards and dynamic JavaFX Force-Directed Graph UI.',
       bullets: [
-        'Developed full-stack educational platform with leaderboards and a secure SQLite backend utilizing custom sorting algorithms.',
-        'Implemented password hashing and session validations for robust access management.',
-        'Designed a dynamic Force-Directed Graph visualization in JavaFX representing complex social relationships with real-time physics simulation.'
+        'Developed a full-stack educational platform featuring global leaderboards and a secure SQLite backend, utilizing custom sorting algorithms to rank users by performance metrics and implementing password hashing for robust access management.',
+        'Designed and implemented a dynamic Force-Directed Graph visualization using JavaFX to represent complex social relationships, incorporating real-time repulsion and attraction algorithms for an interactive user experience.'
       ],
       techStack: ['Java', 'JavaFX', 'SQLite', 'Algorithms', 'Physics Engines'],
       featured: false,
@@ -107,13 +127,12 @@ export default function Projects() {
     },
     {
       id: 'gogreen',
-      title: 'GoGreen: Carbon Footprint Tracking Ecosystem',
+      title: 'GoGreen: A Carbon Footprint Tracking & Sustainability Ecosystem',
       category: 'mobile',
       shortDesc: 'Multi-module Android application focusing on carbon footprint tracking and local sustainability.',
       bullets: [
-        'Architected and migrated a multi-module Android application from an Activity-based structure to a modern Fragment-based architecture.',
-        'Developed and stabilized a complex Android UI featuring dynamic lists, custom charts, and interactive carbon offset calculators.',
-        'Resolved critical merge conflicts and optimized lifecycle states, improving UI performance by 25%.'
+        'Architected and migrated a multi-module Android application from an Activity-based structure to a modern Fragment-based architecture, improving UI performance and code maintainability.',
+        'Developed and stabilized a complex Android user interface featuring dynamic lists, interactive forms, and navigation workflows, resolving critical merge conflicts and ensuring a seamless user experience.'
       ],
       techStack: ['Kotlin', 'Android SDK', 'Fragments', 'SQLite', 'Git'],
       featured: false,
@@ -126,8 +145,7 @@ export default function Projects() {
       shortDesc: 'Decentralized AI decision-making and state transition systems in autonomous swarms.',
       bullets: [
         'Gained deep experience in decentralized AI decision-making and managing complex state transitions in autonomous systems.',
-        'Utilized the Model Context Protocol (MCP) standard to connect LLMs to external tools and sensor simulation feeds.',
-        'Simulated cooperative search-and-rescue paths in a distributed drone swarm.'
+        'Gained knowledge about the Model Context Protocol (MCP), a cutting-edge standard for connecting LLMs to external tools and data sources.'
       ],
       techStack: ['Python', 'MCP', 'Decentralized AI', 'Simulation', 'LLM Agents'],
       featured: false,

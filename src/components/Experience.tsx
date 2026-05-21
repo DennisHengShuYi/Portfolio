@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Briefcase, GraduationCap, Trophy, Calendar, MapPin } from 'lucide-react';
+import { Briefcase, GraduationCap, Trophy, Calendar, MapPin, Users } from 'lucide-react';
 import './Experience.css';
 
 interface TimelineItem {
@@ -13,7 +13,7 @@ interface TimelineItem {
 }
 
 export default function Experience() {
-  const [activeTab, setActiveTab] = useState<'work' | 'education' | 'competition'>('work');
+  const [activeTab, setActiveTab] = useState<'work' | 'education' | 'competition' | 'activity'>('work');
 
   const workItems: TimelineItem[] = [
     {
@@ -129,68 +129,85 @@ export default function Experience() {
 
   const competitionItems: TimelineItem[] = [
     {
-      id: 'comp-1',
-      title: 'Finalist - UM National Deep Tech Challenge Hackathon 2026',
-      subtitle: 'University of Malaya',
-      date: '2026',
+      id: 'comp-4',
+      title: 'Finalist',
+      subtitle: 'Competition of UM National Deep Tech Challenge Hackathon 2026',
+      date: 'May 2026',
+      location: 'University of Malaya (UM)',
       details: [
         'Represented SE department. Designed advanced deep-tech web architectures in a high-intensity hackathon sprint.'
       ],
-      badges: ['Finalist', 'Deep Tech', 'Hackathon']
+      badges: ['Finalist', 'Deep Tech', 'UM']
     },
     {
       id: 'comp-2',
-      title: 'Finalist - Varsity Hackathon 2026',
-      subtitle: 'Universiti Sains Malaysia',
-      date: '2026',
-      location: 'Pulau Pinang, Malaysia',
-      details: [
-        'Reached final stage among top varsity coders in Malaysia. Implemented web optimization prototypes.'
-      ],
-      badges: ['Finalist', 'Varsity Hack', 'USM']
-    },
-    {
-      id: 'comp-3',
-      title: 'Participant - Borneo Hackathon 2026',
-      subtitle: 'UNIMAS (Universiti Malaysia Sarawak)',
-      date: '2026',
+      title: 'Participant',
+      subtitle: 'Competition Borneo Hackathon 2026',
+      date: 'May 2026',
+      location: 'UNIMAS, Kuching, Sarawak',
       details: [
         'Designed and built dynamic prototype applications to address real-time regional telemetry and environmental tracking challenges in Sarawak.'
       ],
-      badges: ['Participant', 'Borneo Hackathon', 'IoT Telemetry']
+      badges: ['Participant', 'Borneo Hackathon', 'UNIMAS']
     },
     {
-      id: 'comp-4',
-      title: 'Participant - UM Hackathon 2026',
-      subtitle: 'University of Malaya',
-      date: '2026',
+      id: 'comp-1',
+      title: 'Finalist',
+      subtitle: 'Competition Varsity Hackathon 2026',
+      date: 'Apr 2026',
+      location: 'USM, Pulau Pinang',
+      details: [
+        'Reached final stage among top varsity coders in Malaysia. Implemented web optimization prototypes.'
+      ],
+      badges: ['Finalist', 'Varsity Hackathon', 'USM']
+    },
+    {
+      id: 'comp-3',
+      title: 'Participant',
+      subtitle: 'Competition of UM Hackathon 2026',
+      date: 'Apr 2026',
+      location: 'University of Malaya (UM)',
       details: [
         'Collaborated with peers to develop and present custom software solutions in a fast-paced coding sprint environment.'
       ],
-      badges: ['Participant', 'UM Hackathon', 'Rapid Prototyping']
+      badges: ['Participant', 'UM Hackathon']
     },
     {
       id: 'comp-5',
+      title: 'Participant',
+      subtitle: 'Competition of Website Development 2024',
+      date: '2024',
+      location: 'University of Malaya (UM)',
+      details: [
+        'Designed, built, and presented responsive web applications under university competition guidelines.'
+      ],
+      badges: ['Participant', 'Website Dev', 'UM']
+    }
+  ];
+
+  const activityItems: TimelineItem[] = [
+    {
+      id: 'act-1',
       title: 'Logistics Committee',
       subtitle: 'Kuayue Concert 24/25',
       date: '2024 - 2025',
       details: [
         'Managed stage setup, equipment handling, and backstage coordination to ensure smooth performance flow.'
       ],
-      badges: ['Kuayue Concert', 'Stage Logistics']
+      badges: ['Kuayue Concert', 'Stage Setup']
     },
     {
-      id: 'comp-6',
-      title: 'Program & Protocol Committee',
-      subtitle: 'Kuayue Concert 23/24',
-      date: '2023 - 2024',
+      id: 'act-5',
+      title: 'Logistics Committee',
+      subtitle: 'UM Hackathon 24/25',
+      date: '2024 - 2025',
       details: [
-        'Coordinated concert flow and guest protocols, ensuring formal segments ran smoothly and on time.'
+        'Oversaw venue preparation, participant registration, and on-site support during the hackathon.'
       ],
-      badges: ['Kuayue Concert', 'Event Protocol']
+      badges: ['UM Hackathon', 'Logistics']
     },
     {
-      id: 'comp-7',
+      id: 'act-3',
       title: 'Logistics Committee',
       subtitle: 'BoshuYouYue Camp 24/25',
       date: '2024 - 2025',
@@ -200,14 +217,34 @@ export default function Experience() {
       badges: ['BoshuYouYue Camp', 'Camp Logistics']
     },
     {
-      id: 'comp-8',
+      id: 'act-2',
+      title: 'Program & Protocol Committee',
+      subtitle: 'Kuayue Concert 23/24',
+      date: '2023 - 2024',
+      details: [
+        'Coordinated concert flow and guest protocols, ensuring formal segments ran smoothly and on time.'
+      ],
+      badges: ['Kuayue Concert', 'Program Flow']
+    },
+    {
+      id: 'act-6',
+      title: 'Logistics Committee',
+      subtitle: 'UM Hackathon 23/24',
+      date: '2023 - 2024',
+      details: [
+        'Assisted in managing supplies, team coordination, and troubleshooting during event execution.'
+      ],
+      badges: ['UM Hackathon', 'Troubleshooting']
+    },
+    {
+      id: 'act-4',
       title: 'Logistics Committee',
       subtitle: 'BoshuYouYue Camp 23/24',
       date: '2023 - 2024',
       details: [
-        'Supported camp logistics including transportation, scheduling, and daily operations.'
+        'Supported camp logistics including transportation, scheduling, and daily operational needs.'
       ],
-      badges: ['BoshuYouYue Camp', 'Camp Logistics']
+      badges: ['BoshuYouYue Camp', 'Operations']
     }
   ];
 
@@ -216,6 +253,7 @@ export default function Experience() {
       case 'work': return workItems;
       case 'education': return educationItems;
       case 'competition': return competitionItems;
+      case 'activity': return activityItems;
     }
   };
 
@@ -224,14 +262,16 @@ export default function Experience() {
       case 'work': return 'work-active';
       case 'education': return 'edu-active';
       case 'competition': return 'comp-active';
+      case 'activity': return 'act-active';
     }
   };
 
-  const getTabIcon = (tab: 'work' | 'education' | 'competition') => {
+  const getTabIcon = (tab: 'work' | 'education' | 'competition' | 'activity') => {
     switch (tab) {
       case 'work': return <Briefcase size={16} />;
       case 'education': return <GraduationCap size={16} />;
       case 'competition': return <Trophy size={16} />;
+      case 'activity': return <Users size={16} />;
     }
   };
 
@@ -260,7 +300,14 @@ export default function Experience() {
           onClick={() => setActiveTab('competition')}
         >
           {getTabIcon('competition')}
-          <span>Competitions & Activities</span>
+          <span>Competitions</span>
+        </button>
+        <button 
+          className={`timeline-tab-btn ${activeTab === 'activity' ? 'active act' : ''}`}
+          onClick={() => setActiveTab('activity')}
+        >
+          {getTabIcon('activity')}
+          <span>Activities</span>
         </button>
       </div>
 

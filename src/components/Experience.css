@@ -12,7 +12,7 @@
   gap: 12px;
   padding: 8px;
   margin: 0 auto 50px auto;
-  max-width: 700px;
+  max-width: 850px;
   border-radius: 12px;
   background: rgba(17, 20, 32, 0.4);
 }
@@ -70,6 +70,13 @@
   box-shadow: 0 4px 15px -5px rgba(245, 158, 11, 0.2);
 }
 
+.timeline-tab-btn.active.act {
+  color: #10b981; /* Emerald Green */
+  background: rgba(16, 185, 129, 0.06);
+  border-color: rgba(16, 185, 129, 0.2);
+  box-shadow: 0 4px 15px -5px rgba(16, 185, 129, 0.2);
+}
+
 /* Timeline Vertical Line & Containers */
 .timeline-timeline-container {
   position: relative;
@@ -112,6 +119,12 @@
   --timeline-color: rgba(245, 158, 11, 0.25);
   --timeline-glow: rgba(245, 158, 11, 0.6);
   --timeline-accent: #f59e0b;
+}
+
+.timeline-timeline-container.act-active {
+  --timeline-color: rgba(16, 185, 129, 0.25);
+  --timeline-glow: rgba(16, 185, 129, 0.6);
+  --timeline-accent: #10b981;
 }
 
 /* Timeline alternating items */
@@ -213,6 +226,12 @@
 .timeline-timeline-container.comp-active .timeline-card:hover {
   border-color: rgba(245, 158, 11, 0.3);
   box-shadow: 0 10px 30px -10px rgba(245, 158, 11, 0.15);
+  transform: translateY(-4px);
+}
+
+.timeline-timeline-container.act-active .timeline-card:hover {
+  border-color: rgba(16, 185, 129, 0.3);
+  box-shadow: 0 10px 30px -10px rgba(16, 185, 129, 0.15);
   transform: translateY(-4px);
 }
 
@@ -331,6 +350,12 @@
   background: rgba(245, 158, 11, 0.03);
   border-color: rgba(245, 158, 11, 0.12);
   color: #f59e0b;
+}
+
+.timeline-timeline-container.act-active .timeline-card-badges .badge-tech {
+  background: rgba(16, 185, 129, 0.03);
+  border-color: rgba(16, 185, 129, 0.12);
+  color: #10b981;
 }
 
 /* Responsive Styles for smaller viewports */

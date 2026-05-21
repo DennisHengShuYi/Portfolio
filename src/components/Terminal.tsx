@@ -69,10 +69,14 @@ export default function Terminal() {
           <div className="term-projects-list">
             <p>• <strong>CareFlow</strong>: Multi-Agent triage framework (Gemini/OpenAI) + Consensus debate engine.</p>
             <p>• <strong>EnviroPulse</strong>: IoT telemetry, IDW interpolation backend + Redis state cache.</p>
+            <p>• <strong>Finance Flow</strong>: Retrieval-Augmented Generation (RAG) + Vector DB classification.</p>
+            <p>• <strong>Code the Nature</strong>: Java/Swing interactive game + JDBC/MySQL backend.</p>
+            <p>• <strong>Hand Sign Language Recognition</strong>: OpenCV & MediaPipe real-time classification.</p>
             <p>• <strong>Memecoin Mania</strong>: ML trend forecast pipeline + web visual dashboard.</p>
             <p>• <strong>Hacking The Future</strong>: Force-directed graph representation (JavaFX) + SQLite backend.</p>
-            <p>• <strong>Finance Flow</strong>: Retrieval-Augmented Generation (RAG) + Vector DB classification.</p>
-            <p>Type the GUI sections above to browse fully detailed summaries!</p>
+            <p>• <strong>GoGreen</strong>: Multi-module Fragment-based Android tracking ecosystem.</p>
+            <p>• <strong>Rescue Swarm</strong>: Decentralized AI decision systems & Model Context Protocol (MCP).</p>
+            <p>Use the GUI sections above to browse fully detailed summaries!</p>
           </div>
         );
         break;
