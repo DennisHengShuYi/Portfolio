@@ -23,6 +23,7 @@ export default function Contact() {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState('');
 
   const email = 'den519000@gmail.com';
   const phone = '016-8087155';
@@ -39,18 +40,58 @@ export default function Contact() {
     setTimeout(() => setCopiedPhone(false), 2000);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formState.name || !formState.email || !formState.message) return;
     
     setIsSubmitting(true);
-    // Simulate submission API call
-    setTimeout(() => {
+    setSubmitSuccess(false);
+    setSubmitError('');
+
+    const accessKey = import.meta.env.VITE_WEB3FORMS_KEY || 'YOUR_ACCESS_KEY_HERE';
+
+    if (accessKey === 'YOUR_ACCESS_KEY_HERE') {
+      // Fallback simulation for local development when key is not configured
+      console.warn('Web3Forms Access Key is not configured. Simulating successful form submission. Get your key at https://web3forms.com');
+      setTimeout(() => {
+        setIsSubmitting(false);
+        setSubmitSuccess(true);
+        setFormState({ name: '', email: '', message: '' });
+        setTimeout(() => setSubmitSuccess(false), 5000);
+      }, 1500);
+      return;
+    }
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          access_key: accessKey,
+          name: formState.name,
+          email: formState.email,
+          message: formState.message,
+          from_name: 'Portfolio Contact Form',
+          subject: `New Message from ${formState.name} (${formState.email})`
+        })
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        setSubmitSuccess(true);
+        setFormState({ name: '', email: '', message: '' });
+        setTimeout(() => setSubmitSuccess(false), 5000);
+      } else {
+        setSubmitError(result.message || 'Something went wrong. Please try again.');
+      }
+    } catch {
+      setSubmitError('Failed to send message. Please check your network connection.');
+    } finally {
       setIsSubmitting(false);
-      setSubmitSuccess(true);
-      setFormState({ name: '', email: '', message: '' });
-      setTimeout(() => setSubmitSuccess(false), 5000);
-    }, 1500);
+    }
   };
 
   return (
@@ -180,6 +221,12 @@ export default function Contact() {
             {submitSuccess && (
               <div className="submit-success-msg">
                 ✓ Thank you! Your message has been sent successfully.
+              </div>
+            )}
+
+            {submitError && (
+              <div className="submit-error-msg">
+                ✗ {submitError}
               </div>
             )}
           </form>

@@ -168,6 +168,18 @@ a.info-value:hover {
   animation: fadeIn 0.3s ease;
 }
 
+.submit-error-msg {
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.05);
+  border: 1px solid rgba(239, 68, 68, 0.15);
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-align: center;
+  animation: fadeIn 0.3s ease;
+}
+
 @media (max-width: 992px) {
   .contact-grid {
     grid-template-columns: 1fr;
