@@ -20,33 +20,33 @@ export default function Skills() {
       category: 'Frontend Development',
       icon: <Layout className="group-icon text-cyan" />,
       items: [
-        { name: 'React / Vite', level: 'Intermediate', percentage: 75 },
-        { name: 'TypeScript', level: 'Intermediate', percentage: 70 },
-        { name: 'JavaScript (ES6+)', level: 'Intermediate', percentage: 75 },
-        { name: 'HTML5 / CSS3', level: 'Intermediate', percentage: 80 },
-        { name: 'Kotlin (Android UI)', level: 'Beginner', percentage: 50 }
+        { name: 'React / Vite', level: 'Intermediate', percentage: 60 },
+        { name: 'TypeScript', level: 'Intermediate', percentage: 55 },
+        { name: 'JavaScript (ES6+)', level: 'Intermediate', percentage: 65 },
+        { name: 'HTML5 / CSS3', level: 'Intermediate', percentage: 70 },
+        { name: 'Kotlin (Android UI)', level: 'Beginner', percentage: 35 }
       ]
     },
     {
       category: 'Backend & Data Systems',
       icon: <Server className="group-icon text-purple" />,
       items: [
-        { name: 'NodeJS / Express', level: 'Intermediate', percentage: 75 },
-        { name: 'Java (OOP / Swing)', level: 'Intermediate', percentage: 75 },
-        { name: 'SQL (MySQL / SQLite)', level: 'Intermediate', percentage: 70 },
-        { name: 'Python', level: 'Intermediate', percentage: 75 },
-        { name: 'Upstash Redis / Caching', level: 'Beginner', percentage: 50 }
+        { name: 'NodeJS / Express', level: 'Intermediate', percentage: 60 },
+        { name: 'Java (OOP / Swing)', level: 'Intermediate', percentage: 60 },
+        { name: 'SQL (MySQL / SQLite)', level: 'Intermediate', percentage: 55 },
+        { name: 'Python', level: 'Intermediate', percentage: 60 },
+        { name: 'Upstash Redis / Caching', level: 'Beginner', percentage: 35 }
       ]
     },
     {
       category: 'AI & Intelligent Systems',
       icon: <Brain className="group-icon text-emerald" />,
       items: [
-        { name: 'Gemini / OpenAI API Orchestration', level: 'Intermediate', percentage: 70 },
-        { name: 'RAG & Vector DB Integration', level: 'Intermediate', percentage: 65 },
-        { name: 'MCP (Model Context Protocol)', level: 'Intermediate', percentage: 65 },
-        { name: 'OpenCV / MediaPipe Hand Tracking', level: 'Beginner', percentage: 45 },
-        { name: 'Machine Learning Pipelines', level: 'Beginner', percentage: 50 }
+        { name: 'Gemini / OpenAI API Orchestration', level: 'Intermediate', percentage: 60 },
+        { name: 'RAG & Vector DB Integration', level: 'Intermediate', percentage: 55 },
+        { name: 'MCP (Model Context Protocol)', level: 'Intermediate', percentage: 55 },
+        { name: 'OpenCV / MediaPipe Hand Tracking', level: 'Beginner', percentage: 30 },
+        { name: 'Machine Learning Pipelines', level: 'Beginner', percentage: 35 }
       ]
     }
   ];
