@@ -52,7 +52,7 @@ export default function Hero({ onExploreProjects, onOpenTerminal }: HeroProps) {
         </h1>
         
         <h2 className="hero-subtitle">
-          Building AI Orchestrations, IoT Backend & Full-Stack Systems.
+          Building AI Orchestrations & Full-Stack Systems.
         </h2>
         
         <p className="hero-description">
