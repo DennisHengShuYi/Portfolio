@@ -62,11 +62,13 @@ export default function Terminal() {
         );
         break;
       case 'about':
-        response = "Dennis Heng Shu Yi is a Software Engineering major at the University of Malaya. Key achievements: 3.89 CGPA in SE, exchange student at CNU in South Korea (90.1% score), and finalist at Varsity Hackathon 2026 and Deep Tech Challenge 2026.";
+        response = "Dennis Heng Shu Yi is a Software Engineering major at the University of Malaya. Key achievements: 3.89 CGPA in SE, exchange student at CNU in South Korea (90.1% score), and finalist at Varsity Hackathon 2026 and Consolation Award winner at Deep Tech Challenge 2026.";
         break;
       case 'projects':
         response = (
           <div className="term-projects-list">
+            <p>• <strong>Fire Drill Simulation</strong>: 3D Godot game simulating BOMBA evacuation drills + procedural level gen.</p>
+            <p>• <strong>UM Rush</strong>: 2D Godot runner themed around University of Malaya campus life.</p>
             <p>• <strong>CareFlow</strong>: Multi-Agent triage framework (Gemini/OpenAI) + Consensus debate engine.</p>
             <p>• <strong>EnviroPulse</strong>: IoT telemetry, IDW interpolation backend + Redis state cache.</p>
             <p>• <strong>Finance Flow</strong>: Retrieval-Augmented Generation (RAG) + Vector DB classification.</p>
@@ -86,7 +88,7 @@ export default function Terminal() {
       case 'experience':
         response = (
           <div className="term-experience-timeline">
-            <p><strong>[2026]</strong> Green Generation - Web Dev Intern (Kuching Sarawak)</p>
+            <p><strong>[2026]</strong> Green Generation - Software Engineer Intern (Kuching Sarawak)</p>
             <p><strong>[2023 - 2025]</strong> Mediaplus Digital - Part-Time Web Developer (Miri Sarawak)</p>
             <p><strong>[2023 - Present]</strong> University of Malaya - Bachelor of Software Engineering</p>
             <p><strong>[2025]</strong> Chonnam National University - Exchange Program (South Korea)</p>

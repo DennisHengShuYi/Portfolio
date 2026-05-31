@@ -154,6 +154,9 @@
   padding: 4px 8px;
   border-radius: 4px;
   white-space: nowrap;
+  width: 105px;
+  text-align: center;
+  display: inline-block;
 }
 
 .cert-name {
@@ -172,4 +175,16 @@
   .extra-skills-container {
     grid-template-columns: 1fr;
   }
+}
+
+/* Fix card header alignment in mobile responsive */
+.skills-section .card-header {
+  justify-content: flex-start;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.skills-section .card-header .group-icon {
+  margin-top: 2px;
+  flex-shrink: 0;
 }

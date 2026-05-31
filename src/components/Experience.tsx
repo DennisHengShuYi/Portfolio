@@ -18,15 +18,16 @@ export default function Experience() {
   const workItems: TimelineItem[] = [
     {
       id: 'work-1',
-      title: 'Web Developer Intern',
+      title: 'Software Engineer Intern',
       subtitle: 'Green Generation',
       date: 'May 2026 - July 2026',
       location: 'Kuching, Sarawak',
       details: [
-        'Engaged in frontend web design and application optimizations during summer internship cycle.',
-        'Collaborated on local green technology initiatives and telemetry web monitoring.'
+        'Designed the system architecture and sustainability data models for an ESG project management tool.',
+        'Built low-fidelity prototypes to map out the development roadmap.',
+        'Prepared technical documentation and handover manuals to guide the engineering team.'
       ],
-      badges: ['Frontend Dev', 'React', 'Telemetry']
+      badges: ['System Architecture', 'ESG', 'Data Modeling', 'Technical Documentation']
     },
     {
       id: 'work-2',
@@ -41,15 +42,15 @@ export default function Experience() {
       badges: ['HTML/CSS', 'WordPress', 'SEO', 'Responsive Web Design']
     },
     {
-      id: 'work-3',
-      title: 'Part-Time Cashier/Promoter',
-      subtitle: 'KN Nursery',
-      date: 'Feb 2025 - Mar 2025',
-      location: 'Miri, Sarawak',
+      id: 'work-5',
+      title: 'Part-Time Cashier Koperasi',
+      subtitle: 'Kolej Poly-Tech MARA Bangi',
+      date: 'Aug 2025 - Aug 2025',
+      location: 'Bangi, Selangor',
       details: [
-        'Handled customer cash transactions, managed checkouts, and promoted nursery plant offerings.'
+        'Managed checkout transactions and supported cooperative bookstore stock replenishment.'
       ],
-      badges: ['Customer Service', 'Cash Handling']
+      badges: ['Operations', 'Cashier']
     },
     {
       id: 'work-4',
@@ -63,15 +64,15 @@ export default function Experience() {
       badges: ['Warehouse', 'Logistics']
     },
     {
-      id: 'work-5',
-      title: 'Part-Time Cashier Koperasi',
-      subtitle: 'Kolej Poly-Tech MARA Bangi',
-      date: 'Aug 2025 - Aug 2025',
-      location: 'Bangi, Selangor',
+      id: 'work-3',
+      title: 'Part-Time Cashier/Promoter',
+      subtitle: 'KN Nursery',
+      date: 'Feb 2025 - Mar 2025',
+      location: 'Miri, Sarawak',
       details: [
-        'Managed checkout transactions and supported cooperative bookstore stock replenishment.'
+        'Handled customer cash transactions, managed checkouts, and promoted nursery plant offerings.'
       ],
-      badges: ['Operations', 'Cashier']
+      badges: ['Customer Service', 'Cash Handling']
     }
   ];
 
@@ -130,25 +131,14 @@ export default function Experience() {
   const competitionItems: TimelineItem[] = [
     {
       id: 'comp-4',
-      title: 'Finalist',
+      title: 'Consolation Award',
       subtitle: 'Competition of UM National Deep Tech Challenge Hackathon 2026',
       date: 'May 2026',
       location: 'University of Malaya (UM)',
       details: [
-        'Represented SE department. Designed advanced deep-tech web architectures in a high-intensity hackathon sprint.'
+        'A national hackathon focused on commercialising University of Malaya intellectual property through market validation and go-to-market strategy pitching.'
       ],
-      badges: ['Finalist', 'Deep Tech', 'UM']
-    },
-    {
-      id: 'comp-2',
-      title: 'Participant',
-      subtitle: 'Competition Borneo Hackathon 2026',
-      date: 'May 2026',
-      location: 'UNIMAS, Kuching, Sarawak',
-      details: [
-        'Designed and built dynamic prototype applications to address real-time regional telemetry and environmental tracking challenges in Sarawak.'
-      ],
-      badges: ['Participant', 'Borneo Hackathon', 'UNIMAS']
+      badges: ['Consolation Award', 'Deep Tech', 'UM']
     },
     {
       id: 'comp-1',
@@ -157,7 +147,7 @@ export default function Experience() {
       date: 'Apr 2026',
       location: 'USM, Pulau Pinang',
       details: [
-        'Reached final stage among top varsity coders in Malaysia. Implemented web optimization prototypes.'
+        'A student-led international hackathon hosted at Universiti Sains Malaysia, challenging undergraduates to build AI-powered solutions addressing ASEAN\'s most pressing social and environmental issues.'
       ],
       badges: ['Finalist', 'Varsity Hackathon', 'USM']
     },
@@ -168,9 +158,20 @@ export default function Experience() {
       date: 'Apr 2026',
       location: 'University of Malaya (UM)',
       details: [
-        'Collaborated with peers to develop and present custom software solutions in a fast-paced coding sprint environment.'
+        'A national hackathon organised by PEKOM and the Faculty of Computer Science and Information Technology at Universiti Malaya, focused on solving real-world data challenges through industry-aligned prototyping.'
       ],
       badges: ['Participant', 'UM Hackathon']
+    },
+    {
+      id: 'comp-2',
+      title: 'Participant',
+      subtitle: 'Competition Borneo Hackathon 2026',
+      date: 'Mar 2026',
+      location: 'UNIMAS, Kuching, Sarawak',
+      details: [
+        'An ASEAN-wide hackathon bringing together students across the region for cross-cultural collaboration and rapid prototyping to tackle real-world challenges inspired by UN SDGs.'
+      ],
+      badges: ['Participant', 'Borneo Hackathon', 'UNIMAS']
     },
     {
       id: 'comp-5',

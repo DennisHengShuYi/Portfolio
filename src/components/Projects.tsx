@@ -35,6 +35,32 @@ export default function Projects() {
 
   const projectsData: Project[] = [
     {
+      id: 'firedrill',
+      title: 'Fire Drill Simulation',
+      category: 'systems',
+      shortDesc: '3D BOMBA-aligned fire evacuation serious game in Godot 4.6 featuring procedural level generation and runtime mobile optimization.',
+      bullets: [
+        'Built a 3D educational serious game in Godot 4.6 simulating BOMBA-aligned fire evacuation drills, featuring oxygen depletion, backdraft detection, NPC moral dilemmas, and a PASS extinguisher minigame; automated full level generation procedurally via a Python script.',
+        'Implemented a runtime mobile optimizer dynamically scaling particles, disabling shadow maps, and capping physics loops to 30Hz, alongside a programmatic audio synthesizer generating all sound effects via math-driven waveforms to eliminate asset overhead.'
+      ],
+      techStack: ['Godot 4.6', 'GDScript', 'Python', 'Procedural Generation', 'Optimization', 'Audio Synthesis'],
+      featured: true,
+      github: 'https://github.com/DennisHengShuYi/Fire-Drill-Simulation'
+    },
+    {
+      id: 'umrush',
+      title: 'UM Rush',
+      category: 'systems',
+      shortDesc: '5-level 2D side-scrolling runner in Godot 4 themed around University of Malaya campus life with distinct survival mechanics.',
+      bullets: [
+        'Developed a 5-level 2D side-scrolling runner in Godot 4 themed around University of Malaya campus life, each level featuring a distinct survival mechanic including sleepiness decay, hunger management, noise detection, WiFi blindness, and a CS trivia exam system.',
+        'Architected a singleton-based global game state managing cross-level scoring and grade calculation, alongside a modular player controller supporting 3-lane interpolation, jump arc physics, roll and dash mechanics, and a dynamic enemy spawner with multiple movement patterns.'
+      ],
+      techStack: ['Godot 4', 'GDScript', 'Game Design', 'Algorithms', 'Physics Engines'],
+      featured: true,
+      github: 'https://github.com/DennisHengShuYi/UM-Rush'
+    },
+    {
       id: 'careflow',
       title: 'CareFlow: AI-Powered Patient Flow Optimizer',
       category: 'ai',
