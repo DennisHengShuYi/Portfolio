@@ -45,7 +45,7 @@ export default function Projects() {
       ],
       techStack: ['Godot 4.6', 'GDScript', 'Python', 'Procedural Generation', 'Optimization', 'Audio Synthesis'],
       featured: true,
-      github: 'https://github.com/DennisHengShuYi/Fire-Drill-Simulation'
+      github: 'https://github.com/DennisHengShuYi/Fire-Drill-Simulation-Game'
     },
     {
       id: 'umrush',
