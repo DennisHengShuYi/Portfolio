@@ -131,6 +131,13 @@ export default function Skills() {
               </div>
             </div>
             <div className="cert-item">
+              <span className="cert-badge">AWS Academy</span>
+              <div className="cert-details">
+                <h4 className="cert-name">AWS Academy Graduate - Cloud Foundations</h4>
+                <p className="cert-issuer">AWS Training and Certification</p>
+              </div>
+            </div>
+            <div className="cert-item">
               <span className="cert-badge">UM Code</span>
               <div className="cert-details">
                 <h4 className="cert-name">University of Malaya - Dean's List Award</h4>
