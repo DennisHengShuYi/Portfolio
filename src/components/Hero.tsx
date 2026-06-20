@@ -21,7 +21,7 @@ const GithubIcon = ({ size = 20 }: { size?: number }) => (
   </svg>
 );
 
-/* const LinkedinIcon = ({ size = 20 }: { size?: number }) => (
+const LinkedinIcon = ({ size = 20 }: { size?: number }) => (
   <svg
     viewBox="0 0 24 24"
     width={size}
@@ -36,7 +36,7 @@ const GithubIcon = ({ size = 20 }: { size?: number }) => (
     <rect x="2" y="9" width="4" height="12" />
     <circle cx="4" cy="4" r="2" />
   </svg>
-); */
+);
 
 export default function Hero({ onExploreProjects, onOpenTerminal }: HeroProps) {
   return (
@@ -72,9 +72,9 @@ export default function Hero({ onExploreProjects, onOpenTerminal }: HeroProps) {
           <a href="https://github.com/DennisHengShuYi" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="GitHub Profile">
             <GithubIcon size={20} />
           </a>
-          {/* <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="LinkedIn Profile">
+          <a href="https://www.linkedin.com/in/dennis-heng-shu-yi" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="LinkedIn Profile">
             <LinkedinIcon size={20} />
-          </a> */}
+          </a>
           <a href="mailto:den519000@gmail.com" className="social-icon" aria-label="Email Me">
             <Mail size={20} />
           </a>
